@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Small AI - Bookmarks Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout">
+    
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="logo">Bookmarks</a>
+      </div>
+      <div class="sidebar-search">
+        <input type="text" id="search" placeholder="Search bookmarks..." />
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html" class="">All Bookmarks</a></li>
+        <li><a href="favorites.html" class="">Favorites</a></li>
+        <li><a href="tags.html" class="">Tags</a></li>
+      </ul>
+      <div class="nav-groups">
+        <details class="nav-group" open>
+          <summary>Discovery</summary>
+          <ul>
+            <li><a href="collection/discovery/ads.html" class="">Ads</a></li>
+            <li><a href="collection/discovery/aeo.html" class="">AEO</a></li>
+            <li><a href="collection/discovery/ai.html" class="">AI</a></li>
+            <li><a href="collection/discovery/ai-creative.html" class="">AI Creative</a></li>
+            <li><a href="collection/discovery/ai-learn.html" class="">AI Learn</a></li>
+            <li><a href="collection/discovery/ai-templates.html" class="">AI Templates</a></li>
+            <li><a href="collection/discovery/all.html" class="">All</a></li>
+            <li><a href="collection/discovery/apis.html" class="">APIs</a></li>
+            <li><a href="collection/discovery/cms-dxp.html" class="">CMS DXP</a></li>
+            <li><a href="collection/discovery/cursor.html" class="">Cursor</a></li>
+            <li><a href="collection/discovery/cursor-community.html" class="">Cursor Community</a></li>
+            <li><a href="collection/discovery/design-systems.html" class="">Design Systems</a></li>
+            <li><a href="collection/discovery/ideas.html" class="">Ideas</a></li>
+            <li><a href="collection/discovery/interviews.html" class="">Interviews</a></li>
+            <li><a href="collection/discovery/marketing-guide-2026.html" class="">Marketing Guide 2026</a></li>
+            <li><a href="collection/discovery/nice.html" class="">NiCE</a></li>
+            <li><a href="collection/discovery/notes-apps.html" class="">Notes Apps</a></li>
+            <li><a href="collection/discovery/pension.html" class="">Pension</a></li>
+            <li><a href="collection/discovery/read-later.html" class="">Read Later</a></li>
+            <li><a href="collection/discovery/recreate-ai.html" class="">Recreate AI</a></li>
+            <li><a href="collection/discovery/resources.html" class="">Resources</a></li>
+            <li><a href="collection/discovery/speach-api-transcribe.html" class="">Speach API - Transcribe</a></li>
+            <li><a href="collection/discovery/startup.html" class="">Startup</a></li>
+            <li><a href="collection/discovery/statup-cartoons.html" class="">Statup: Cartoons</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>AI</summary>
+          <ul>
+            <li><a href="collection/ai/apis.html" class="">APIs</a></li>
+            <li><a href="collection/ai/automation.html" class="">Automation</a></li>
+            <li><a href="collection/ai/code-agents.html" class="">Code Agents</a></li>
+            <li><a href="collection/ai/courses.html" class="">Courses</a></li>
+            <li><a href="collection/ai/cursor.html" class="">Cursor</a></li>
+            <li><a href="collection/ai/design-2-code.html" class="">Design 2 Code</a></li>
+            <li><a href="collection/ai/explorators.html" class="">Explorators</a></li>
+            <li><a href="collection/ai/general.html" class="">General</a></li>
+            <li><a href="collection/ai/learn-courses.html" class="">Learn - Courses</a></li>
+            <li><a href="collection/ai/librariers.html" class="">LIbrariers</a></li>
+            <li><a href="collection/ai/llm-learn-aim.html" class="">LLM LEARN - AIM</a></li>
+            <li><a href="collection/ai/local-llms.html" class="">Local LLMs</a></li>
+            <li><a href="collection/ai/mcp.html" class="">MCP</a></li>
+            <li><a href="collection/ai/on-screen-ai-cluely.html" class="">on Screen AI - Cluely</a></li>
+            <li><a href="collection/ai/read-more-about.html" class="">Read more about</a></li>
+            <li><a href="collection/ai/resources.html" class="">Resources</a></li>
+            <li><a href="collection/ai/stack.html" class="">Stack</a></li>
+            <li><a href="collection/ai/testing-pentesting-jailbreak.html" class="">Testing - Pentesting - Jailbreak</a></li>
+            <li><a href="collection/ai/tools.html" class="">Tools</a></li>
+            <li><a href="collection/ai/vibe-subs.html" class="">Vibe Subs</a></li>
+            <li><a href="collection/ai/video.html" class="">Video</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Prompt</summary>
+          <ul>
+            <li><a href="collection/prompt/hacking.html" class="">Hacking</a></li>
+            <li><a href="collection/prompt/interestig.html" class="">Interestig</a></li>
+            <li><a href="collection/prompt/learn.html" class="">Learn</a></li>
+            <li><a href="collection/prompt/must.html" class="">Must</a></li>
+            <li><a href="collection/prompt/read.html" class="">Read</a></li>
+            <li><a href="collection/prompt/redteam.html" class="">RedTeam</a></li>
+            <li><a href="collection/prompt/tools.html" class="">Tools</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>WebDev</summary>
+          <ul>
+            <li><a href="collection/webdev/chrome-extensions.html" class="">Chrome Extensions</a></li>
+            <li><a href="collection/webdev/ex-above-the-fold.html" class="">EX: Above the Fold</a></li>
+            <li><a href="collection/webdev/online-helpers.html" class="">Online Helpers</a></li>
+            <li><a href="collection/webdev/selling-startup.html" class="">Selling Startup</a></li>
+            <li><a href="collection/webdev/ui-resources.html" class="">UI Resources</a></li>
+            <li><a href="collection/webdev/vibecoding-startups.html" class="">VibeCoding Startups</a></li>
+            <li><a href="collection/webdev/web-vitals.html" class="">Web Vitals</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Inspiration</summary>
+          <ul>
+            <li><a href="collection/inspiration/agencies.html" class="">Agencies</a></li>
+            <li><a href="collection/inspiration/effects.html" class="">Effects</a></li>
+            <li><a href="collection/inspiration/fonts.html" class="">Fonts</a></li>
+            <li><a href="collection/inspiration/hackathons.html" class="">Hackathons</a></li>
+            <li><a href="collection/inspiration/ideas.html" class="">Ideas</a></li>
+            <li><a href="collection/inspiration/inspiration.html" class="">Inspiration</a></li>
+            <li><a href="collection/inspiration/mind-quest.html" class="">Mind Quest</a></li>
+            <li><a href="collection/inspiration/resources.html" class="">Resources</a></li>
+            <li><a href="collection/inspiration/saas.html" class="">SaaS</a></li>
+            <li><a href="collection/inspiration/ux-sketches.html" class="">UX, Sketches</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>HubSpot</summary>
+          <ul>
+            <li><a href="collection/hubspot/emails.html" class="">eMails</a></li>
+            <li><a href="collection/hubspot/explore.html" class="">Explore</a></li>
+            <li><a href="collection/hubspot/interesting.html" class="">Interesting</a></li>
+            <li><a href="collection/hubspot/modules.html" class="">Modules</a></li>
+            <li><a href="collection/hubspot/react.html" class="">React</a></li>
+            <li><a href="collection/hubspot/resources.html" class="">Resources</a></li>
+            <li><a href="collection/hubspot/tools.html" class="">Tools</a></li>
+            <li><a href="collection/hubspot/videos.html" class="">Videos</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>APIS</summary>
+          <ul>
+            <li><a href="collection/apis/llm-docs.html" class="">LLM docs</a></li>
+            <li><a href="collection/apis/realtime.html" class="">Realtime</a></li>
+            <li><a href="collection/apis/scrape.html" class="">Scrape</a></li>
+            <li><a href="collection/apis/self-hosted.html" class="">Self-hosted</a></li>
+            <li><a href="collection/apis/voice.html" class="">Voice</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>JavaScript</summary>
+          <ul>
+            <li><a href="collection/javascript/3d.html" class="">3D</a></li>
+            <li><a href="collection/javascript/animations.html" class="">Animations</a></li>
+            <li><a href="collection/javascript/arrays.html" class="">Arrays</a></li>
+            <li><a href="collection/javascript/gsap.html" class="">GSAP</a></li>
+            <li><a href="collection/javascript/interesting.html" class="">Interesting</a></li>
+            <li><a href="collection/javascript/plugins.html" class="">Plugins</a></li>
+            <li><a href="collection/javascript/react.html" class="">React</a></li>
+            <li><a href="collection/javascript/resources.html" class="">Resources</a></li>
+            <li><a href="collection/javascript/tools.html" class="">Tools</a></li>
+            <li><a href="collection/javascript/tutorials.html" class="">Tutorials</a></li>
+            <li><a href="collection/javascript/webpack.html" class="">Webpack</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>LEARNING</summary>
+          <ul>
+            <li><a href="collection/learning/2021.html" class="">2021</a></li>
+            <li><a href="collection/learning/2022.html" class="">2022</a></li>
+            <li><a href="collection/learning/2023.html" class="">2023</a></li>
+            <li><a href="collection/learning/2025.html" class="">2025</a></li>
+            <li><a href="collection/learning/3d.html" class="">3D</a></li>
+            <li><a href="collection/learning/animations.html" class="">Animations</a></li>
+            <li><a href="collection/learning/courses.html" class="">Courses</a></li>
+            <li><a href="collection/learning/css.html" class="">CSS</a></li>
+            <li><a href="collection/learning/hackerrank.html" class="">HackerRank</a></li>
+            <li><a href="collection/learning/learning.html" class="">Learning</a></li>
+            <li><a href="collection/learning/munich.html" class="">Munich</a></li>
+            <li><a href="collection/learning/must.html" class="">MUST</a></li>
+            <li><a href="collection/learning/podcasts.html" class="">Podcasts</a></li>
+            <li><a href="collection/learning/practice.html" class="">Practice</a></li>
+            <li><a href="collection/learning/react.html" class="">React</a></li>
+            <li><a href="collection/learning/reading.html" class="">Reading</a></li>
+            <li><a href="collection/learning/seo.html" class="">SEO</a></li>
+            <li><a href="collection/learning/thinkin-resolving.html" class="">Thinkin &amp; Resolving</a></li>
+            <li><a href="collection/learning/tutorials.html" class="">Tutorials</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Server</summary>
+          <ul>
+            <li><a href="collection/server/cache.html" class="">Cache</a></li>
+            <li><a href="collection/server/ddev.html" class="">DDEV</a></li>
+            <li><a href="collection/server/git.html" class="">GIT</a></li>
+            <li><a href="collection/server/hosting.html" class="">Hosting</a></li>
+            <li><a href="collection/server/iptables.html" class="">iptables</a></li>
+            <li><a href="collection/server/others.html" class="">Others</a></li>
+            <li><a href="collection/server/pip.html" class="">PIP</a></li>
+            <li><a href="collection/server/plesk-onyx.html" class="">Plesk Onyx</a></li>
+            <li><a href="collection/server/postgresql-supabase.html" class="">PostgreSQL Supabase</a></li>
+            <li><a href="collection/server/ssh-wsl2.html" class="">SSH WSL2</a></li>
+            <li><a href="collection/server/terminal.html" class="">Terminal</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Tools</summary>
+          <ul>
+            <li><a href="collection/tools/ai.html" class="">AI</a></li>
+            <li><a href="collection/tools/draw-moqs.html" class="">Draw Moqs</a></li>
+            <li><a href="collection/tools/email.html" class="">Email</a></li>
+            <li><a href="collection/tools/esim.html" class="">eSIM</a></li>
+            <li><a href="collection/tools/finance.html" class="">Finance</a></li>
+            <li><a href="collection/tools/ga4.html" class="">GA4</a></li>
+            <li><a href="collection/tools/low-code-no-code.html" class="">Low Code No Code</a></li>
+            <li><a href="collection/tools/online.html" class="">Online</a></li>
+            <li><a href="collection/tools/others.html" class="">Others</a></li>
+            <li><a href="collection/tools/outlook.html" class="">Outlook</a></li>
+            <li><a href="collection/tools/podcast.html" class="">Podcast</a></li>
+            <li><a href="collection/tools/time-tracking.html" class="">Time Tracking</a></li>
+            <li><a href="collection/tools/tools.html" class="">Tools</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>WordPress</summary>
+          <ul>
+            <li><a href="collection/wordpress/important.html" class="">!important</a></li>
+            <li><a href="collection/wordpress/2023.html" class="">2023</a></li>
+            <li><a href="collection/wordpress/cache.html" class="">Cache</a></li>
+            <li><a href="collection/wordpress/comments.html" class="">Comments</a></li>
+            <li><a href="collection/wordpress/composer.html" class="">Composer</a></li>
+            <li><a href="collection/wordpress/facetwp.html" class="">FacetWP</a></li>
+            <li><a href="collection/wordpress/filtering.html" class="">Filtering</a></li>
+            <li><a href="collection/wordpress/frameworks.html" class="">Frameworks</a></li>
+            <li><a href="collection/wordpress/gatsbyjs.html" class="">GatsbyJS</a></li>
+            <li><a href="collection/wordpress/global.html" class="">Global</a></li>
+            <li><a href="collection/wordpress/gutenberg.html" class="">Gutenberg</a></li>
+            <li><a href="collection/wordpress/local.html" class="">Local</a></li>
+            <li><a href="collection/wordpress/loops.html" class="">Loops</a></li>
+            <li><a href="collection/wordpress/mail-wp-mail.html" class="">Mail WP Mail</a></li>
+            <li><a href="collection/wordpress/mu.html" class="">MU</a></li>
+            <li><a href="collection/wordpress/plugins.html" class="">Plugins</a></li>
+            <li><a href="collection/wordpress/reading.html" class="">Reading</a></li>
+            <li><a href="collection/wordpress/starter-theme.html" class="">Starter Theme</a></li>
+            <li><a href="collection/wordpress/wpcli.html" class="">WPCLI</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>UX Design</summary>
+          <ul>
+            <li><a href="collection/ux-design/apps-saas.html" class="">Apps SaaS</a></li>
+            <li><a href="collection/ux-design/deep-learning.html" class="">Deep Learning</a></li>
+            <li><a href="collection/ux-design/design-systems.html" class="">Design Systems</a></li>
+            <li><a href="collection/ux-design/design-tokens.html" class="">Design Tokens</a></li>
+            <li><a href="collection/ux-design/fonts.html" class="">Fonts</a></li>
+            <li><a href="collection/ux-design/icons.html" class="">Icons</a></li>
+            <li><a href="collection/ux-design/important.html" class="">Important</a></li>
+            <li><a href="collection/ux-design/reading.html" class="">Reading</a></li>
+            <li><a href="collection/ux-design/resources.html" class="">Resources</a></li>
+            <li><a href="collection/ux-design/vectors.html" class="">Vectors</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Office</summary>
+          <ul>
+            <li><a href="collection/office/webcam.html" class="">Webcam</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>n8n</summary>
+          <ul>
+            <li><a href="collection/n8n/hosting.html" class="">Hosting</a></li>
+            <li><a href="collection/n8n/interesting.html" class="">Interesting</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Recreate</summary>
+          <ul>
+            <li><a href="collection/recreate/all.html" class="">All</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Cognigy</summary>
+          <ul>
+            <li><a href="collection/cognigy/helpers.html" class="">Helpers</a></li>
+            <li><a href="collection/cognigy/hubspot.html" class="">HubSpot</a></li>
+            <li><a href="collection/cognigy/ideas.html" class="">Ideas</a></li>
+            <li><a href="collection/cognigy/interesting.html" class="">Interesting</a></li>
+            <li><a href="collection/cognigy/lenovo.html" class="">Lenovo</a></li>
+            <li><a href="collection/cognigy/nx5-inspiration.html" class="">NX5 Inspiration</a></li>
+            <li><a href="collection/cognigy/pricing.html" class="">Pricing</a></li>
+            <li><a href="collection/cognigy/search-web-search.html" class="">Search - Web Search</a></li>
+            <li><a href="collection/cognigy/tutorials.html" class="">Tutorials</a></li>
+            <li><a href="collection/cognigy/ux-clicks.html" class="">UX: Clicks</a></li>
+            <li><a href="collection/cognigy/zendesk.html" class="">Zendesk</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Marketing</summary>
+          <ul>
+            <li><a href="collection/marketing/ga4.html" class="">GA4</a></li>
+            <li><a href="collection/marketing/reading.html" class="">Reading</a></li>
+            <li><a href="collection/marketing/tools.html" class="">Tools</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Audits</summary>
+          <ul>
+            <li><a href="collection/audits/chatgpt.html" class="">ChatGPT</a></li>
+            <li><a href="collection/audits/resources.html" class="">Resources</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Startup</summary>
+          <ul>
+            <li><a href="collection/startup/reading.html" class="">Reading</a></li>
+            <li><a href="collection/startup/start.html" class="">Start</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Blockchain</summary>
+          <ul>
+            <li><a href="collection/blockchain/global.html" class="">Global</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Figma</summary>
+          <ul>
+            <li><a href="collection/figma/resources.html" class="">Resources</a></li>
+            <li><a href="collection/figma/templates.html" class="">Templates</a></li>
+            <li><a href="collection/figma/tutorials.html" class="">Tutorials</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>PHP</summary>
+          <ul>
+            <li><a href="collection/php/ajax.html" class="">AJAX</a></li>
+            <li><a href="collection/php/backups.html" class="">Backups</a></li>
+            <li><a href="collection/php/laravel.html" class="">Laravel</a></li>
+            <li><a href="collection/php/learning.html" class="">Learning</a></li>
+            <li><a href="collection/php/news.html" class="">News</a></li>
+            <li><a href="collection/php/php.html" class="">PHP</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>Download</summary>
+          <ul>
+            <li><a href="collection/download/downloads.html" class="">Downloads</a></li>
+            <li><a href="collection/download/interesting.html" class="">Interesting</a></li>
+            <li><a href="collection/download/offline.html" class="">Offline</a></li>
+          </ul>
+        </details>
+        <details class="nav-group" open>
+          <summary>CSS</summary>
+          <ul>
+            <li><a href="collection/css/animations.html" class="">Animations</a></li>
+            <li><a href="collection/css/effects.html" class="">Effects</a></li>
+            <li><a href="collection/css/megamenu.html" class="">MegaMenu</a></li>
+            <li><a href="collection/css/sass.html" class="">SASS</a></li>
+            <li><a href="collection/css/tailwindcss.html" class="">TailwindCSS</a></li>
+          </ul>
+        </details>
+      </div>
+    </nav>
+    <main class="main-content">
+      
+        <div class="page-header">
+          <h1>Small AI</h1>
+          <p>Inspiration / Inspiration / Small AI - 12 bookmarks</p>
+        </div>
+        <div class="bookmark-grid">
+          
+    <article class="bookmark-card" data-title="lorikeet | customer support universal ai concierge" data-domain="lorikeetcx.ai" data-tags="">
+      <img src="https://framerusercontent.com/images/kq3dEeZhCkNVbORVKJrt3vL24.png" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://www.lorikeetcx.ai/?utm_source=roi-cal&amp;utm_medium=button&amp;utm_campaign=roi-cal&amp;utm_content=top-nav" target="_blank" rel="noopener">Lorikeet | Customer support universal AI concierge</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">lorikeetcx.ai</span>
+          
+        </div>
+        <p class="excerpt">Businesses with the highest CX standards choose Lorikeet's platform to deliver a universal concierge to their customers to solve the most complicated ...</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">Dec 12, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="extantia | industries re-imagined." data-domain="extantia.com" data-tags="">
+      <img src="https://cdn.prod.website-files.com/672f66b023ca1f0c1a90667f/6759f7bbe8c1b3926cd9d9e4_MoosSteine.avif" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://www.extantia.com/" target="_blank" rel="noopener">Extantia | Industries Re-Imagined.</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">extantia.com</span>
+          
+        </div>
+        <p class="excerpt">We back pioneers who are finding new paths to unlock growth. For good. Re-engineered industries create a faster, cheaper and more sustainable future....</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">Aug 18, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="prompt injection taxonomy | pangea" data-domain="pangea.cloud" data-tags="">
+      <img src="https://pangea.cloud/open-graph-taxonomy-2.png" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://pangea.cloud/taxonomy/#IM0008" target="_blank" rel="noopener">Prompt Injection Taxonomy | Pangea</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">pangea.cloud</span>
+          
+        </div>
+        <p class="excerpt">Explore the Pangea Prompt Injection Taxonomy using the interactive web experience...</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">Aug 4, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="voiceline | ai-based field sales revenue intelligence" data-domain="getvoiceline.com" data-tags="">
+      <img src="https://framerusercontent.com/images/EZbgpRHE86bHfECZfin6OpcOu3I.png" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://getvoiceline.com/" target="_blank" rel="noopener">VoiceLine | AI-Based Field Sales Revenue Intelligence</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">getvoiceline.com</span>
+          
+        </div>
+        <p class="excerpt">VoiceLine is AI-powered field sales revenue intelligence. Document any customer interactions in seconds, get actionable insights and boost sales perfo...</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">Jul 24, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="runpod - the cloud built for ai" data-domain="runpod.io" data-tags="">
+      <img src="https://www.runpod.io/static/images/home-page-preview-image.webp" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://www.runpod.io/" target="_blank" rel="noopener">RunPod - The Cloud Built for AI</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">runpod.io</span>
+          
+        </div>
+        <p class="excerpt">Develop, train, and scale AI models in one cloud. Spin up on-demand GPUs with GPU Cloud, scale ML inference with Serverless....</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">May 29, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="marblism - ai employees who work for you" data-domain="marblism.com" data-tags="">
+      <img src="https://cdn.prod.website-files.com/67f7b560cd5f7dd1b195b975/680617b4b00463c8db7b2b63_OG%207.jpg" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://www.marblism.com/" target="_blank" rel="noopener">Marblism - AI Employees Who Work for You</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">marblism.com</span>
+          
+        </div>
+        <p class="excerpt">Grow your business with a team of AI Employees who love overtime. They manage your inbox, post on your social media, write articles and find more lead...</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">May 28, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="enterprise architecture software | ardoq" data-domain="ardoq.com" data-tags="">
+      <img src="https://www.ardoq.com/hubfs/Website%20Pages/Homepage/Block%20Purple%20Dark%203_wide.png" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://www.ardoq.com/" target="_blank" rel="noopener">Enterprise Architecture Software | Ardoq</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">ardoq.com</span>
+          
+        </div>
+        <p class="excerpt">Streamline IT portfolios, reduce tech debt, and manage risk with Ardoq’s intelligent enterprise architecture platform. Real-time insights. Smarter dec...</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">May 22, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="knack: no-code application development platform" data-domain="knack.com" data-tags="">
+      <img src="https://www.knack.com/wp-content/uploads/2023/09/Untitled-design-87.png" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://www.knack.com/" target="_blank" rel="noopener">Knack: No-Code Application Development Platform</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">knack.com</span>
+          
+        </div>
+        <p class="excerpt">Transform your ideas into reality using Knack, the top no code app builder and no code software platform. Create without coding and get expert assista...</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">Apr 21, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="langfuse" data-domain="langfuse.com" data-tags="">
+      <img src="https://langfuse.com/api/og?title=Langfuse%20-%20Open%20Source%20LLM%20Engineering%20Platform&amp;description=Traces%2C%20evals%2C%20prompt%20management%20and%20metrics%20to%20debug%20and%20improve%20your%20LLM%20application.%20Integrates%20with%20Langchain%2C%20OpenAI%2C%20LlamaIndex%2C%20LiteLLM%2C%20and%20more.&amp;section=" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://langfuse.com/" target="_blank" rel="noopener">Langfuse</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">langfuse.com</span>
+          
+        </div>
+        <p class="excerpt">Traces, evals, prompt management and metrics to debug and improve your LLM application. Integrates with Langchain, OpenAI, LlamaIndex, LiteLLM, and mo...</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">Apr 13, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="conversational ai | virtual call center software | gridspace" data-domain="gridspace.com" data-tags="">
+      <img src="https://rdl.ink/render/https%3A%2F%2Fwww.gridspace.com%2F" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://www.gridspace.com/" target="_blank" rel="noopener">Conversational AI | Virtual Call Center Software | Gridspace</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">gridspace.com</span>
+          
+        </div>
+        <p class="excerpt">Gridspace's virtual agents and voice observability software powers modern contact centers. Understand and automate voice calls, chats, and customer co...</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">Feb 23, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="integrations for customer support platforms | forethought" data-domain="forethought.ai" data-tags="">
+      <img src="https://forethought.ai/wp-content/uploads/2023/05/AWS-logo-2-200x150.jpeg" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://forethought.ai/integrations/" target="_blank" rel="noopener">Integrations for Customer Support Platforms | Forethought</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">forethought.ai</span>
+          
+        </div>
+        <p class="excerpt">Integrate with platforms like Zendesk, Salesforce, and ServiceNow to enhance your customer experience and empower your agents....</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">Feb 23, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bookmark-card" data-title="bexi.ai - humanize ai text | free ai humanizer tool for natural language" data-domain="bexi.ai" data-tags="">
+      <img src="https://rdl.ink/render/https%3A%2F%2Fbexi.ai%2F%3Futm_source%3Daiwith.me%26utm_medium%3Dreferral%26ref%3Daiwith.me" alt="" class="bookmark-cover" loading="lazy" onerror="this.style.display='none'" />
+      <div class="bookmark-content">
+        <h3><a href="https://bexi.ai/?utm_source=aiwith.me&amp;utm_medium=referral&amp;ref=aiwith.me" target="_blank" rel="noopener">BEXI.ai - Humanize AI Text | Free AI Humanizer Tool for Natural Language</a></h3>
+        <div class="bookmark-meta">
+          <span class="domain">bexi.ai</span>
+          
+        </div>
+        <p class="excerpt">BEXI.ai is a free tool for humanizing AI-generated text, making it natural and undetectable. With multilingual support and customizable styles, BEXI.a...</p>
+        <div class="bookmark-footer">
+          
+          <div class="footer-meta">
+            <a href="collection/inspiration/inspiration/small-ai.html" class="collection-link">Small AI</a>
+            <span class="date">Feb 18, 2025</span>
+          </div>
+        </div>
+      </div>
+    </article>
+        </div>
+        
+    </main>
+  </div>
+  
+<script>
+document.getElementById('search').addEventListener('input', function(e) {
+  const query = e.target.value.toLowerCase().trim();
+  const cards = document.querySelectorAll('.bookmark-card');
+
+  cards.forEach(card => {
+    if (!query) {
+      card.classList.remove('hidden');
+      return;
+    }
+
+    const title = card.dataset.title || '';
+    const domain = card.dataset.domain || '';
+    const tags = card.dataset.tags || '';
+
+    const matches = title.includes(query) ||
+                    domain.includes(query) ||
+                    tags.includes(query);
+
+    card.classList.toggle('hidden', !matches);
+  });
+});
+</script>
+</body>
+</html>
