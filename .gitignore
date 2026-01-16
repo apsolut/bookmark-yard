@@ -1,0 +1,28 @@
+# Vibe
+.claude/
+
+# Dependencies
+node_modules/
+
+# Build artifacts (keep minified version for production)
+search-index.json
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local env files
+.env
+.env.local
