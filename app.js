@@ -323,7 +323,7 @@
   // Quick Filter Buttons
   // ============================================
 
-  const QUICK_FILTERS = ['ai', 'design', 'api', 'react', 'hubspot', 'css', 'figma', 'tailwind'];
+  const QUICK_FILTERS = ['ai', 'prompt', 'api', 'context', 'open source', 'security', 'inspiration'];
 
   function createQuickFilters() {
     const main = document.querySelector('main');
