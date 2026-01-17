@@ -310,6 +310,60 @@
   }
 
   // ============================================
+  // Quick Filter Buttons
+  // ============================================
+
+  const QUICK_FILTERS = ['ai', 'design', 'api', 'react', 'hubspot', 'css', 'figma', 'tailwind'];
+
+  function createQuickFilters() {
+    const main = document.querySelector('main');
+    if (!main || document.getElementById('quick-filters')) return;
+
+    const container = document.createElement('div');
+    container.id = 'quick-filters';
+    container.className = 'quick-filters';
+
+    const label = document.createElement('span');
+    label.className = 'quick-filters-label';
+    label.textContent = 'Quick search:';
+    container.appendChild(label);
+
+    QUICK_FILTERS.forEach(term => {
+      const btn = document.createElement('button');
+      btn.className = 'quick-filter-btn';
+      btn.textContent = term;
+      btn.dataset.term = term;
+      btn.addEventListener('click', () => applyQuickFilter(term));
+      container.appendChild(btn);
+    });
+
+    main.insertBefore(container, main.firstChild);
+  }
+
+  function applyQuickFilter(term) {
+    const searchInput = document.getElementById('search');
+    if (searchInput) {
+      searchInput.value = term;
+      searchInput.dispatchEvent(new Event('input'));
+    }
+
+    // Update button states
+    document.querySelectorAll('.quick-filter-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.term === term);
+    });
+
+    // Update URL
+    const params = getUrlParams();
+    setUrlParams({ ...params, q: term });
+  }
+
+  function updateQuickFilterState(query) {
+    document.querySelectorAll('.quick-filter-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.term === query.toLowerCase());
+    });
+  }
+
+  // ============================================
   // Search Results Container
   // ============================================
 
@@ -335,6 +389,7 @@
     // Create UI elements
     createSearchResultsContainer();
     createFavoritesToggle();
+    createQuickFilters();
 
     // Restore sidebar state
     restoreSidebarState();
@@ -376,6 +431,9 @@
 
           // Update URL
           setUrlParams({ ...urlParams, q: query });
+
+          // Update quick filter button state
+          updateQuickFilterState(query);
         }, 150);
       });
 
@@ -394,6 +452,9 @@
         if (favToggle) favToggle.classList.add('active');
       }
       filterCurrentPage(params.q, params.tag, params.favorites);
+      if (params.q) {
+        updateQuickFilterState(params.q);
+      }
     }
 
     // Preload search index in background
