@@ -296,16 +296,26 @@
 
   function setupTagFiltering() {
     document.addEventListener('click', (e) => {
-      if (e.target.classList.contains('tag')) {
-        e.preventDefault();
-        const tag = e.target.textContent.trim();
-        const searchInput = document.getElementById('search');
-        const query = searchInput ? searchInput.value : '';
-        const params = getUrlParams();
+      const tagEl = e.target.closest('.tag');
+      if (!tagEl) return;
 
-        setUrlParams({ ...params, tag });
-        filterCurrentPage(query, tag, params.favorites);
-      }
+      // If tag is a link (on tags page), let it navigate
+      if (tagEl.tagName === 'A' && tagEl.href) return;
+
+      e.preventDefault();
+
+      // Get tag text without the count span
+      const countSpan = tagEl.querySelector('.tag-count');
+      const tag = countSpan
+        ? tagEl.textContent.replace(countSpan.textContent, '').trim()
+        : tagEl.textContent.trim();
+
+      const searchInput = document.getElementById('search');
+      const query = searchInput ? searchInput.value : '';
+      const params = getUrlParams();
+
+      setUrlParams({ ...params, tag });
+      filterCurrentPage(query, tag, params.favorites);
     });
   }
 
