@@ -6,7 +6,7 @@
 (function() {
   'use strict';
 
-  const BASE_PATH = '/bookmark-yard';
+  const BASE_PATH = '';
   let searchIndex = null;
   let searchTimeout = null;
 

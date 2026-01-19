@@ -2,7 +2,7 @@
 
 A searchable, static archive of your [Raindrop.io](https://raindrop.io) bookmarks — hosted free on GitHub Pages.
 
-**[View Live Demo](https://yourusername.github.io/bookmark-yard)**
+**[View Live Demo](https://drop.apsolut.dev/)**
 
 ---
 
