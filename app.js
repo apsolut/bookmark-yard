@@ -192,7 +192,10 @@
 
     setUrlParams({ q: '', tag: '', favorites: '' });
     filterCurrentPage('', '', false);
+    filterSidebar('');
     hideSearchResults();
+    updateSidebarClearButton(false);
+    updateQuickFilterState('');
   };
 
   // ============================================
@@ -384,10 +387,34 @@
     container.id = 'global-search-results';
     container.className = 'global-search-results';
 
-    const sidebar = document.querySelector('.sidebar');
     const searchWrapper = document.querySelector('.sidebar-search');
     if (searchWrapper) {
       searchWrapper.appendChild(container);
+    }
+  }
+
+  // ============================================
+  // Sidebar Clear Search Button
+  // ============================================
+
+  function updateSidebarClearButton(hasActiveSearch) {
+    let clearBtn = document.getElementById('sidebar-clear-search');
+    const searchWrapper = document.querySelector('.sidebar-search');
+
+    if (!searchWrapper) return;
+
+    if (hasActiveSearch) {
+      if (!clearBtn) {
+        clearBtn = document.createElement('button');
+        clearBtn.id = 'sidebar-clear-search';
+        clearBtn.className = 'sidebar-clear-btn';
+        clearBtn.innerHTML = '✕ Clear search';
+        clearBtn.addEventListener('click', () => window.clearAllFilters());
+        searchWrapper.appendChild(clearBtn);
+      }
+      clearBtn.style.display = 'block';
+    } else if (clearBtn) {
+      clearBtn.style.display = 'none';
     }
   }
 
@@ -444,6 +471,9 @@
 
           // Update quick filter button state
           updateQuickFilterState(query);
+
+          // Show/hide clear button
+          updateSidebarClearButton(query.length > 0 || urlParams.tag || urlParams.favorites);
         }, 150);
       });
 
@@ -465,6 +495,7 @@
       if (params.q) {
         updateQuickFilterState(params.q);
       }
+      updateSidebarClearButton(true);
     }
 
     // Preload search index in background

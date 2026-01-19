@@ -43,7 +43,7 @@ body {
   text-decoration: none;
 }
 
-.sidebar-search { margin-bottom: 1.5rem; }
+.sidebar-search { margin-bottom: 1.5rem; position: relative; }
 .sidebar-search input {
   width: 100%;
   padding: 0.5rem 0.75rem;
@@ -55,6 +55,23 @@ body {
 }
 .sidebar-search input::placeholder { color: rgba(255,255,255,0.5); }
 .sidebar-search input:focus { outline: 2px solid var(--accent); }
+
+.sidebar-clear-btn {
+  display: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.sidebar-clear-btn:hover {
+  background: #d97706;
+}
 
 .nav-list {
   list-style: none;
