@@ -9,6 +9,7 @@ A searchable, static archive of your [Raindrop.io](https://raindrop.io) bookmark
 ## Features
 
 - **Instant Search** — Filter bookmarks across your entire collection in real-time
+- **Quick Filters** — One-click buttons for common search terms
 - **Tag Filtering** — Click any tag to filter bookmarks instantly
 - **Favorites View** — Quick access to your starred bookmarks
 - **Organized Collections** — Browse by categories with collapsible navigation
